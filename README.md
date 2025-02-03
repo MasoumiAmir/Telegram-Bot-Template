@@ -27,6 +27,20 @@ Pre-configured CI/CD Pipelines
 
 
 # 🚀 Quick Deployment
+bash:
+
+# Clone & setup
+git clone https://github.com/yourusername/telegram-bot-arch.git
+cd telegram-bot-arch
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Configure environment
+cp .env.example .env
+
+# Start bot (Polling/Webhook mode)
+python main.py
 
 # Clone & setup
 git clone https://github.com/MasoumiAmir/Telegram-Bot-Template.git
