@@ -23,44 +23,14 @@ Multi-language Resource Management
 
 Pre-configured CI/CD Pipelines
 
-🏗 Core Architecture Overview
-plaintext
-Copy
-my-bot/
-├── core/              # Bot core (Webhook config, routing)
-│   ├── bot.py         # Bot instance initialization
-│   ├── webhook.py     # Webhook server setup
-│   └── config.py      # Environment configuration
-│
-├── handlers/          # Event processors
-│   ├── commands/      # Slash command handlers
-│   │   ├── start.py   # /start implementation
-│   │   └── admin.py   # Admin commands
-│   ├── messages.py    # Text/media message processing
-│   └── payments.py    # Transaction flows
-│
-├── database/          # Data layer
-│   ├── models/        # DB entities (Users, Transactions)
-│   ├── queries.py     # CRUD operations
-│   └── migrations/    # Schema versioning
-│
-├── middlewares/       # Request processing layer
-│   ├── auth.py        # JWT/API key validation
-│   └── rate_limiter.py# Request throttling
-│
-├── services/          # External integrations
-│   ├── payment_gateway.py # Payment processors
-│   └── sms_service.py     # SMS providers
-│
-└── resources/         # Static assets
-    ├── locales/       # i18n translations
-    └── templates/     # Message templates
-🚀 Quick Deployment
-bash
-Copy
+# 🏗 Core Architecture Overview
+
+
+# 🚀 Quick Deployment
+
 # Clone & setup
-git clone https://github.com/yourusername/telegram-bot-arch.git
-cd telegram-bot-arch
+git clone https://github.com/MasoumiAmir/Telegram-Bot-Template.git
+cd Telegram-Bot-Template
 
 # Install dependencies
 pip install -r requirements.txt
@@ -70,7 +40,7 @@ cp .env.example .env
 
 # Start bot (Polling/Webhook mode)
 python main.py
-💡 Why This Structure?
+# 💡 Why This Structure?
 Separation of Concerns
 
 Clear division between business logic and infrastructure
